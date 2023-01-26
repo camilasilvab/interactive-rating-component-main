@@ -21,6 +21,7 @@
 
 html {
   font-size: 62.5%;
+  font-family: 'Overpass', sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -48,3 +49,84 @@ form, input, textarea, select, button, label {
 }
 /* _______________________ */
 
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  background-color: var(--VeryDarkBlue);
+  color: var(--White);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1.5em;
+  width: 23em;
+  height: 25em;
+  border-radius: 1.8rem;
+  background: linear-gradient(0deg, rgb(20, 29, 42) 50%, rgb(37, 45, 55) 100%);
+}
+
+.card_start {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 3em;
+  height: 3em;
+  border-radius: 100%;
+  background-color: var(--DarkBlue);
+}
+.card_start img {
+  width: 40%;
+  object-fit: contain;
+}
+
+.card_text h2 {
+  margin-bottom: 1em;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.card_text p {
+  font-size: .9rem;
+  line-height: 1.5rem;
+  color: var(--LightGrey);
+}
+
+.card_request {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.card_request input {
+  width: 3em;
+  height: 3em;
+  border-radius: 20em;
+  color: var(--LightGrey);
+  background-color: var(--DarkBlue);
+  cursor: pointer;
+}
+
+.card_request input:hover {
+  color: var(--White);
+  background-color: var(--LightGrey);
+}
+
+.card_button-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.button {
+  width: 19em;
+  height: 2.5em;
+  border-radius: 20em;
+  background-color: var(--Orange);
+  cursor: pointer;
+}
