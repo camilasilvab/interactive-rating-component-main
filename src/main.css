@@ -130,3 +130,8 @@ body {
   background-color: var(--Orange);
   cursor: pointer;
 }
+
+.button:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+}
