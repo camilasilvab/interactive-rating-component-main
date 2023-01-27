@@ -12,7 +12,7 @@
   <title>Support Request</title>
 </head>
 <body>
-  <div class="card">
+  <main class="card">
     <figure class="card_start">
       <img src="/assets/icon-star.svg" alt="start">
     </figure>
@@ -20,17 +20,45 @@
       <h2>How did we do?</h2>
       <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offtering!</p>
     </div>
-    <div class="card_request">
-      <input type="button" value="1">
-      <input type="button" value="2">
-      <input type="button" value="3">
-      <input type="button" value="4">
-      <input type="button" value="5">
-    </div>
+    <form class="card_request">
+      <div>       
+        <label for="btn1">1</label>
+        <input type="radio" id="btn1" value="1" name="score">
+      </div>
+      <div>
+        <input type="radio" id="btn2" value="2" name="score">
+        <label for="btn2">2</label>
+      </div>
+      <div>
+        <input type="radio" id="btn3" value="3" name="score">
+        <label for="btn3">3</label>
+      </div>
+      <div>
+        <input type="radio" id="btn4" value="4" name="score">
+        <label for="btn4">4</label>
+      </div>
+      <div>
+        <input type="radio" id="btn5" value="5" name="score">
+        <label for="btn5">5</label>
+      </div>
+    </form>
     <div class="card_button-container">
       <button class="button" type="submit">SUBMIT</button>
     </div>
-  </div>
+
+    <div class="card_thanks card">
+      <figure class="card_thanks-icon">
+        <img src="./assets/illustration-thank-you.svg" alt="">
+      </figure>
+      <div class="select_message">
+        <p id="rank">You selected 1 out of 5</p>
+      </div>
+      <div class="card_thanks-message card_text">
+        <h2>Thank you!</h2>
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+      </div>
+    </div>
+  </main>
 
 
 

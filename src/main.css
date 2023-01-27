@@ -103,7 +103,10 @@ body {
   justify-content: space-around;
 }
 
-.card_request input {
+.card_request div, .card_request input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 3em;
   height: 3em;
   border-radius: 20em;
@@ -112,10 +115,19 @@ body {
   cursor: pointer;
 }
 
+.card_request label {
+  position: absolute;
+}
+
 .card_request input:hover {
   color: var(--White);
-  background-color: var(--LightGrey);
+  background-color: var(--Orange);
 }
+
+.card_request input:checked {
+  background-color: hsla(217, 12%, 63%, 0.381);
+}
+
 
 .card_button-container {
   display: flex;
@@ -134,4 +146,36 @@ body {
 .button:hover {
   background-color: var(--White);
   color: var(--Orange);
+}
+
+.card_thanks {
+  display: none;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card_thanks-icon img {
+  width: 8em
+}
+
+.select_message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 2em;
+  padding-top: .13rem;
+  border-radius: 10em;
+  color: var(--Orange);
+  background-color: var(--DarkBlue);
+}
+
+.card_thanks-message h2 {
+  text-align: center;
+}
+
+.card_thanks-message p {
+  margin-top: -1.2em;
+  font-size: .9rem;
+  text-align: center;
 }
