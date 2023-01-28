@@ -1,30 +1,22 @@
-const option1 = document.getElementById('btn1')
-const option2 = document.getElementById('btn2')
-const option3 = document.getElementById('btn3')
-const option4 = document.getElementById('btn4')
-const option5 = document.getElementById('btn5')
-const button = document.querySelector('.button')
+const button = document.querySelector('#button');
+const options = document.querySelectorAll('input[name="score"]'); 
 
-option1.addEventListener ('click', () =>{
-  
-  console.log ('has dado click 1')
-} );
-option2.addEventListener ('click', () =>{
-  console.log ('has dado click 2')
-} );
-option3.addEventListener ('click', () =>{
-  console.log ('has dado click 3')
-} );
-option4.addEventListener ('click', () =>{
-  console.log ('has dado click 4')
-} );
-option5.addEventListener ('click', () =>{
-  console.log ('has dado click 5')
-} );
+button.addEventListener ('click', showThankCard)
 
-button.addEventListener ('click', () =>{
-  alert ('enviaste')
-} );
+function showThankCard () {
+  document.querySelector(".card_thanks").style.display = "flex";
+  document.querySelector("#card").style.display = "none"
 
+  let selectedOption ; 
 
+  for (const option of options) {
+    if (option.checked) {
+      selectedOption = option.value ; 
+      break;
+    }
+  }
+
+  rank.innerText = selectedOption ? `You selected ${selectedOption} out of 5` : `You haven't selected`;
+
+}
 

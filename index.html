@@ -12,7 +12,7 @@
   <title>Support Request</title>
 </head>
 <body>
-  <main class="card">
+  <div class="card" id="card">
     <figure class="card_start">
       <img src="/assets/icon-star.svg" alt="start">
     </figure>
@@ -43,22 +43,26 @@
       </div>
     </form>
     <div class="card_button-container">
-      <button class="button" type="submit">SUBMIT</button>
+      <button id="button" class="button">SUBMIT</button>
     </div>
 
-    <div class="card_thanks card">
-      <figure class="card_thanks-icon">
-        <img src="./assets/illustration-thank-you.svg" alt="">
-      </figure>
-      <div class="select_message">
-        <p id="rank">You selected 1 out of 5</p>
-      </div>
-      <div class="card_thanks-message card_text">
-        <h2>Thank you!</h2>
-        <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
-      </div>
+    <p id="output"></p>
+  </div>  
+
+  <div class="card_thanks card">
+    <figure class="card_thanks-icon">
+      <img src="./assets/illustration-thank-you.svg" alt="">
+    </figure>
+    <div class="select_message">
+      <p id="rank"></p>
     </div>
-  </main>
+    <div class="card_thanks-message card_text">
+      <h2>Thank you!</h2>
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+    </div>
+  </div>  
+
+
 
 
 
