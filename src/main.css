@@ -64,9 +64,10 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 1.5em;
-  width: 23em;
-  height: 25em;
+  padding: 2.5em;
+  padding-bottom: 1.2em;
+  width: 33em;
+  height: 35em;
   border-radius: 1.8rem;
   background: linear-gradient(0deg, rgb(20, 29, 42) 50%, rgb(37, 45, 55) 100%);
 }
@@ -75,8 +76,8 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
-  width: 3em;
-  height: 3em;
+  width: 4em;
+  height: 4em;
   border-radius: 100%;
   background-color: var(--DarkBlue);
 }
@@ -87,13 +88,13 @@ body {
 
 .card_text h2 {
   margin-bottom: 1em;
-  font-size: 1.8rem;
+  font-size: 2.6rem;
   font-weight: 700;
 }
 
 .card_text p {
-  font-size: .9rem;
-  line-height: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
   color: var(--LightGrey);
 }
 
@@ -110,6 +111,7 @@ body {
   width: 3em;
   height: 3em;
   border-radius: 20em;
+  font-size: 1.4rem;
   color: var(--LightGrey);
   background-color: var(--DarkBlue);
   cursor: pointer;
@@ -136,9 +138,10 @@ body {
 }
 
 .button {
-  width: 19em;
-  height: 2.5em;
+  width: 26.5em;
+  height: 2.6em;
   border-radius: 20em;
+  font-size: 1.4rem;
   background-color: var(--Orange);
   cursor: pointer;
 }
@@ -155,17 +158,18 @@ body {
 }
 
 .card_thanks-icon img {
-  width: 8em
+  width: 14em
 }
 
 .select_message {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70%;
-  height: 2em;
+  width: 60%;
+  height: 2.5em;
   padding-top: .13rem;
   border-radius: 10em;
+  font-size: 1.2rem;
   color: var(--Orange);
   background-color: var(--DarkBlue);
 }
@@ -176,6 +180,6 @@ body {
 
 .card_thanks-message p {
   margin-top: -1.2em;
-  font-size: .9rem;
+  font-size: 1.25rem;
   text-align: center;
 }
