@@ -5,7 +5,7 @@ button.addEventListener ('click', showThankCard)
 
 function showThankCard () {
   document.querySelector(".card_thanks").style.display = "flex";
-  document.querySelector("#card").style.display = "none"
+  document.querySelector("#card-rating").style.display = "none"
 
   let selectedOption ; 
 
